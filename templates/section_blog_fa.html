@@ -1,0 +1,7 @@
+{% extends "blog_fa.html" %}
+
+{% block content %} 
+{% for post in section.pages %}
+	<h1><a href="{{ post.permalink }}">{{ post.title }}</a></h1>
+{% endfor %}
+{% endblock content %}
